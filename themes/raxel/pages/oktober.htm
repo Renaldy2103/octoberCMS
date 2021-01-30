@@ -1,0 +1,37 @@
+title = "Cara Instal October"
+url = "/oktober"
+layout = "generic"
+description = "Bacalah Info Ingin Kamu Ketahui !"
+is_hidden = 0
+==
+<!-- Text -->
+<section>
+    <h2>Pengertian</h2>
+    <p>October CMS merupakan sebuah CMS yang berbasiskan laravel framework. Hadir dengan struktur yang rapi dan menyajikan kemudahan dalam modofikasi-nya, bahkan sudah ada plugin yang memudahkah para pengguna October untuk membuat plugin sendiri (rainlab builder), sangat membantu para developer untuk membuat plugin sendiri dalam project-nya. Pada kesempatan ini akan dibahas bagaimana cara instalasi october menggunakan git, jadi kita akan clone repo dari october ini.</p>
+    <hr />
+    <p><b>Sebelum masuk ke tahap instalasi, pastikan system ada memenuhi requirements berikut ini :</b></p>
+    <p>1. PHP version 5.5.9 or higher</p>
+    <p>2. PDO PHP Extension</p>
+    <p>3. cURL PHP Extension</p>
+    <p>4. OpenSSL PHP Extension</p>
+    <p>5. Mbstring PHP Library</p>
+    <p>6. ZipArchive PHP Library</p>
+    <p>7. GD PHP Library</p>
+
+    <h3><b>Cara Dan Proses :</b></h3>
+    <p>Informasi diatas berdasarkan situs resmi October CMS. Jika sudah memenuhi requirements diatas, pastikan di komputer anda sudah terinstal GIT dan composer, karena kita akan melakukan cloning dari github menggunakan GIT.</p>
+
+    <p>1. Jalankan perintah berikut di terminal / command prompt <b><i>git clone https://github.com/octobercms/october.git</i></b>.Tunggu sampai proses cloning selesai.</p>
+    <p>2. Setelah proses selesai, masuk ke directory yang hasil cloning tadi (dafault-nya foldernya adalah october), kemudian jalankan perintah <b><i>composer update.</i></b></p>
+    <p>3. Jika proses update telah selesai, sekarang kita bisa melakukan instalasi dengan menggunakan perintah <b><i>php artisan october:install.</i></b></p>
+
+    <p> ~. Anda akan diminta untuk memilih database yang akan digunakan, kali ini kita akan menggunakan database <b>MySQL</b>.</p>
+    <p> ~. Pilih host yang akan digunakan, default-nya adalah localhost, langsung tekan enter jika mau menggunakan default-nya.</p>
+    <p> ~. Masukkan port MySQL, standartnya adalah <b>3306</b>.</p>
+    <p> ~. Kemudian masukkan nama database, pastikan sebelumnya anda sudah membuat database-nya.</p>
+    <p> ~. Masukkan <b>username</b> dan <b>password</b> untuk login ke MySQL.</p>
+    <p> ~. Sampai disini kita sudah selesai untuk konfigurasi database nya, selanjutanya kita akan diminta untuk memasukkan username, password, dan informasi lainnya untuk login ke admin panel nantinya.</p>
+    <p> ~. Kemudian akan muncul konfigurasi untuk melakukan konfigurasi opsi lanjutan (advanced options) atau tidak, langsung enter saja, kita tidak perlu melakukan konfigurasi ini, kecuali anda sudah expert, :D</p>
+
+    <p>Kita sudah berhasil melakukan instalasi October CMS. Untuk melihat hasilnya anda bisa menjalalankan perintah <b><i>php artisan serve</i></b>. Kemudian buka di browser <b><i>localhost:8000</i></b>. </p>
+</section>
